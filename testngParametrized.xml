@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+    <test name="ParametrizedTest" thread-count="2">
+        <classes>
+            <class name="allure.reports.testCases.AllureReportTest"/>
+        </classes>
+    </test>
+</suite>
